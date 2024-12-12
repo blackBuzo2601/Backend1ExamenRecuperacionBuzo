@@ -6,10 +6,14 @@ condiciones.*/
 const numeroIntroducido = 2342554354; //numero introducido por el usuario
 const carroX = 0;
 const carroY = 0;
-
+const numeroIntroducidoString = numeroIntroducido.toString();
+//const numeroIntroducidoString = numeroIntroducido.toString();
 if (numeroIntroducido < 0) {
   console.log("No introduzcas numeros negativos");
 } else {
   console.log("Numero entero positivo detectado. Proceder");
-  let numeroStringeado = numeroIntroducido.toString();
+
+  for (let i = 0; i < numeroIntroducidoString.length; i++) {
+    console.log(numeroIntroducidoString[i]);
+  }
 }
