@@ -7,6 +7,9 @@ const numeroIntroducido = 2342554354; //numero introducido por el usuario
 const carroX = 0;
 const carroY = 0;
 const numeroIntroducidoString = numeroIntroducido.toString();
+let contador = -1;
+let valorUno = 0;
+let valorDos = 0;
 //const numeroIntroducidoString = numeroIntroducido.toString();
 if (numeroIntroducido < 0) {
   console.log("No introduzcas numeros negativos");
@@ -14,6 +17,14 @@ if (numeroIntroducido < 0) {
   console.log("Numero entero positivo detectado. Proceder");
 
   for (let i = 0; i < numeroIntroducidoString.length; i++) {
-    console.log(numeroIntroducidoString[i]);
+    contador++;
+    valorUno = numeroIntroducidoString[contador];
+    contador++;
+    valorDos = numeroIntroducidoString[contador];
+
+    if (contador == 2) {
+      console.log("programa detenido");
+      break;
+    }
   }
 }
